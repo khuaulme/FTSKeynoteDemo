@@ -31,6 +31,8 @@
         </div>
     </header>
 
+       <!-- INSERT CHARTS STUFF HERE - OPTIONAL -->
+    
     <div>
         <p id="results" style="font-size: 1.8em"></p>
     </div>
@@ -43,9 +45,8 @@
         let txt = "";
 
         console.log(searchString);
-
-          // let webhook_url = ">>UNCOMMENT AND INSERT YOUR STITCH API WEBHOOK HERE!!<<";
-        let webhook_url = "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/ftsdemo-zcyez/service/movies-FTS/incoming_webhook/movies-FTS";
+     
+        let webhook_url = "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/ftsdemo-zcyez/service/movies-basic-FTS/incoming_webhook/movies-basic-FTS";
         let url = webhook_url + "?arg=" + searchString;
 
         fetch(url)
